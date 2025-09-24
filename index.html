@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissor</title>
+
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p class="title">
+        Rock Paper Scissors
+    </p>
+    <button
+        onclick="
+           playerMove('Rock');
+        " class="move-icon"
+    >
+        <img src="./Images/rock-emoji.png" alt="rock">
+    </button>
+
+    <button
+        onclick="
+            playerMove('Paper');
+        "class="move-icon"
+    >
+        <img src="./Images/paper-emoji.png" alt="paper">
+    </button>
+    <button
+        onclick="
+           
+            playerMove('Scissor');
+        "class="move-icon"
+    >
+        <img src="./Images/scissors-emoji.png" alt="Scissor">
+    </button>
+    
+
+    <p class="match-decide">
+    </p>
+    <p class="rock-paper">
+    </p>
+    <p class="Rock">
+    </p>
+
+    <button onclick="
+        score = {
+            win: 0,
+            loss: 0, 
+            tie: 0
+        }
+         document.querySelector('.Rock').innerHTML = `win: ${score.win}, lose: ${score.loss}, tie: ${score.tie}`
+    " class="reset">
+        Reset Game
+    </button>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
